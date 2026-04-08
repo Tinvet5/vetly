@@ -15,17 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // DATA
   // =========================
   const atlas = {
-    skull1: { image: "images/lateral.JPG", labels: [
+    skull1: { image: "images/lateral.jpg", labels: [
       { name: "Arco Cigomático", info: "El arco cigomático...", x: 0.395, y: 0.315 },
       { name: "Agujero infraorbitario", info: "El agujero infraorbitario...", x: 0.655, y: 0.360 }
     ]},
-    skull2: { image: "images/ventral.JPG", labels: [
+    skull2: { image: "images/ventral.jpg", labels: [
       { name: "Agujero Magno", info: "El agujero magno...", x: 0.145, y: 0.335}
     ]},
-    skull3: { image: "images/dorsal.JPG", labels: [
+    skull3: { image: "images/dorsal.jpg", labels: [
       { name: "Hueso Frontal", info: "El hueso frontal...", x: 0.35, y: 0.45 }
     ]},
-    skull4: { image: "images/craneal.JPG", labels: [
+    skull4: { image: "images/craneal.jpg", labels: [
       { name: "Lamina Cribosa", info: "La lamina cribosa...", x: 0.35, y: 0.45 }
     ]}
   };
