@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile scaling -->
+  <title>VETLY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <h1>VETLY</h1>
+</header>
+
+<div id="viewer"></div>
+
+<div class="control-panel">
+  <!-- Label search -->
+  <input type="text" id="labelSearch" placeholder="Search labels..." style="
+    padding:8px 10px; 
+    border-radius:6px; 
+    border:none; 
+    font-size:14px; 
+    margin-bottom:8px;
+    width: 100%;
+    box-sizing: border-box;
+  ">
+
+  <button id="toggleLabels">👁️ Labels</button>
+  <button id="resetView">🔄 Reset</button>
+
+  <div class="divider"></div>
+
+  <button data-img="skull1">Lateral</button>
+  <button data-img="skull2">Ventral</button>
+  <button data-img="skull3">Dorsal</button>
+  <button data-img="skull4">Frontal</button>
+
+  <div class="divider"></div>
+
+  <button id="toggleTheme">Theme</button>
+  <div class="divider"></div>
+
+  <button id="addAnnotation">✏️ Add Annotation</button>
+</div>
+
+<!-- Info panel centered at bottom for mobile -->
+<div id="infoPanel" class="info-panel hidden" style="
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 320px;
+  z-index: 1000;
+">
+  <h3 id="infoTitle"></h3>
+  <p id="infoText"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
